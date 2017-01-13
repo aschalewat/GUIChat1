@@ -7,9 +7,9 @@ import javax.swing.*;
 import java.io.*;
 import java.net.*;
 
-//edited todayhghh
+//edited todayhghh122112
 /**
- * Opens a window that can be used for a two-way network chat.
+ *Opens a window that can be used for a two-way network chat.
  * The window can "listen" for a connection request on a port
  * that is specified by the user.  It can request a connection
  * to another GUIChat11 window on a specified computer and port.
