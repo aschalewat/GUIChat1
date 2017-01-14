@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.io.*;
 import java.net.*;
 
-//edited todayhghh122112130100
+//edited todayhghh12211213010000000
 /**
  *Opens a window that can be used for a two-way network chat.
  * The window can "listen" for a connection request on a port
