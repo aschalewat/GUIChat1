@@ -4,6 +4,7 @@ try{
         stage('Checkout'){
             try{
                 checkout scm
+                git url :'https://github.com/aschalewat/GUIChat1.git/'
             }catch (error){
                 echo "${error}"
             }
