@@ -9,7 +9,7 @@ import java.net.*;
 
 //edited todayhghh999991234
 /**
- * Opens a window that can be used for a two-way network chat.
+ * Opens a window that can be used for a two-way network chat.nc
  * The window can "listen" for a connection request on a port
  * that is specified by the user.  It can request a connection
  * to another GUIChat11 window on a specified computer and port.
