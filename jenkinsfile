@@ -1,13 +1,23 @@
-node {
-    def branch = env.BRANCH_NAME
-    echo "the new branch ${branch}"
-    stage('DEV'){
-        echo 'Hello World1'
+#!/bin/env groovy
+try{
+    node (){
+        stage('Checkout'){
+            try{
+                checkout scm
+            }catch (error){
+                echo "${error}"
+            }
+        }
+        stage('build'){
+            echo 'Building the code'
+        }
+        stage('QA'){
+            echo 'Test is complete'
+        }
+        stage('PRODUCTION'){
+            echo 'Product is ready'
+        }
     }
-    stage('QA'){
-        echo 'Test is complete'
-    }
-    stage('PRODUCTION'){
-        echo 'Product is ready'
-    }
+}finally {
+    echo "Done!"
 }
