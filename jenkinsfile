@@ -1,4 +1,5 @@
 #!/bin/env groovy
+/*
 try{
     node (){
         stage('Checkout'){
@@ -21,4 +22,19 @@ try{
     }
 }finally {
     echo "Done!"
+}
+*/
+
+node {
+    def branch = env.BRANCH_NAME
+    echo "the new branch ${branch}"
+    stage('DEV'){
+        echo 'Hello World1'
+    }
+    stage('QA'){
+        echo 'Test is complete'
+    }
+    stage('PRODUCTION'){
+        echo 'Product is ready'
+    }
 }
