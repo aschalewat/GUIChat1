@@ -395,6 +395,11 @@ public class GUIChat1 extends JFrame {
       private PrintWriter out;
       private BufferedReader in;
       
+      
+      
+      
+       
+      
       /**
        * Listen for a connection on a specifed port.  The constructor
        * does not perform any network operations; it just sets some
